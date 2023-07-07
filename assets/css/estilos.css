@@ -1,5 +1,27 @@
+:root {
+  --blanco:            #FFFFFF;
+  --gris:              #757575;
+  --negro:             #000000;
+  --principal:         #ff9300 ;
+  --secundario-oscuro: #cc7700 ;
+}
+
 body {
   font-family: "Raleway", sans-serif;
+}
+
+/* Utilidades */
+
+.font-light {
+  font-weight: lighter;
+}
+
+.bg-color-ppal {
+  background-color: var(--principal);
+}
+
+.color-ppal {
+  color: var(--principal);
 }
 
 /* Hero Section */
@@ -9,6 +31,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
+}
+
+span.font-light {
+  color: var(--blanco);
 }
 
 /* Mis trabajos */
