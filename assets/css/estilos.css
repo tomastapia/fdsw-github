@@ -1,9 +1,12 @@
 :root {
-  --blanco:            #FFFFFF;
-  --gris:              #757575;
-  --negro:             #000000;
+  --blanco:            #ffffff;
+    --grisClaro:       #f2f2f2;
+    --grisMedio:       #c0c0c0;
+    --gris:            #474b4e;
+    --grisOscuro:      #2e2e2e;
+    --negro:           #000;
   --principal:         #ff9300 ;
-  --secundario-oscuro: #cc7700 ;
+  --principal-oscuro:  #ac6a0f ;
 }
 
 body {
@@ -23,6 +26,9 @@ body {
 .color-ppal {
   color: var(--principal);
 }
+.sombra {
+  box-shadow: 2px 2px 15px 0px rgba(187, 125, 67, 0.5);
+}
 
 /* Hero Section */
 
@@ -32,12 +38,59 @@ body {
   background-size: cover;
   background-position: left;
 }
-
 span.font-light {
   color: var(--blanco);
+  font-size: 65%;
+}
+.btn-ppal {
+  color: var(--blanco);
+  background-color: var(--principal);
+  border: var(--principal);
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btn-ppal:hover {
+  color: var(--blanco);
+  background-color: var(--principal-oscuro);
+  transition: .2s;
+}
+.btn-contacto {
+  color: var(--blanco);
+  background-color: transparent;
+  border: var(--principal) solid 1px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btn-contacto:hover {
+  color: var(--blanco);
+  background-color: var(--principal);
+  transition: .2s;
 }
 
 /* Mis trabajos */
+
+.btn {
+  color: var(--blanco);
+  background-color: var(--principal);
+  border: var(--principal);
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btn:hover {
+  color: var(--grisClaro);
+  background-color: var(--principal-oscuro);
+  transition: .2s;
+}
+
+.bg-info {
+  background-color: #fff3e1 !important;
+}
 
 #Mis-trabajos .image-top {
   height: 250px;
