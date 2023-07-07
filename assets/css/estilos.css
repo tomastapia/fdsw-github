@@ -101,6 +101,11 @@ span.font-light {
 
 /* Contacto */
 
+textarea {
+  height: 300px;
+  resize: none;
+}
+
 #Contacto form label {
   font-weight: 700;
   color: #373a3c;
