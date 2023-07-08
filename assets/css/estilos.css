@@ -1,12 +1,16 @@
 :root {
-  --blanco:            #ffffff;
-    --grisClaro:       #f2f2f2;
-    --grisMedio:       #c0c0c0;
-    --gris:            #474b4e;
-    --grisOscuro:      #2e2e2e;
-    --negro:           #000;
-  --principal:         #ff9300 ;
-  --principal-oscuro:  #ac6a0f ;
+  --blanco:             #ffffff;
+  --grisClaro:          #f2f2f2;
+  --grisMedio:          #c0c0c0;
+  --gris:               #474b4e;
+  --grisOscuro:         #2e2e2e;
+  --negro:              #000000;
+  --principal:          #27374D;
+  --principal-2:        #526D82;
+  --principal-3:        #9DB2BF;
+  --principal-4:        #DDE6ED;
+  --secundario:         #ff9300;
+  --secundario-oscuro:  #ac6a0f;
 }
 
 body {
@@ -26,8 +30,13 @@ body {
 .color-ppal {
   color: var(--principal);
 }
+
+.color-sec {
+  color: var(--secundario);
+}
+
 .sombra {
-  box-shadow: 2px 2px 15px 0px rgba(187, 125, 67, 0.5);
+  box-shadow: 2px 2px 15px 0px var(--principal-3, 0.5);
 }
 
 /* Hero Section */
@@ -44,8 +53,8 @@ span.font-light {
 }
 .btn-ppal {
   color: var(--blanco);
-  background-color: var(--principal);
-  border: var(--principal);
+  background-color: var(--secundario);
+  border: var(--secundario);
   border-radius: 20px;
   padding: 10px 20px;
   font-weight: bold;
@@ -53,13 +62,13 @@ span.font-light {
 }
 .btn-ppal:hover {
   color: var(--blanco);
-  background-color: var(--principal-oscuro);
+  background-color: var(--secundario-oscuro);
   transition: .2s;
 }
 .btn-contacto {
   color: var(--blanco);
   background-color: transparent;
-  border: var(--principal) solid 1px;
+  border: var(--secundario) solid 1px;
   border-radius: 20px;
   padding: 10px 20px;
   font-weight: bold;
@@ -67,16 +76,16 @@ span.font-light {
 }
 .btn-contacto:hover {
   color: var(--blanco);
-  background-color: var(--principal);
+  background-color: var(--secundario);
+  border: var(--secundario) solid 1px;
   transition: .2s;
 }
 
-/* Mis trabajos */
+/* Mis Proyectos */
 
 .btn {
   color: var(--blanco);
-  background-color: var(--principal);
-  border: var(--principal);
+  background-color: var(--secundario);
   border-radius: 20px;
   padding: 5px 20px;
   font-weight: bold;
@@ -84,12 +93,12 @@ span.font-light {
 }
 .btn:hover {
   color: var(--grisClaro);
-  background-color: var(--principal-oscuro);
+  background-color: var(--secundario-oscuro);
   transition: .2s;
 }
 
 .bg-info {
-  background-color: #fff3e1 !important;
+  background-color: var(--principal-4) !important;
 }
 
 #Mis-trabajos .image-top {
